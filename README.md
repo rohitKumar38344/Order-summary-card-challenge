@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/rohitKumar38344/Order-summary-card-challenge)
+- Live Site URL: [page](https://rohitkumar38344.github.io/Order-summary-card-challenge/)
 
 ### Built with
 
