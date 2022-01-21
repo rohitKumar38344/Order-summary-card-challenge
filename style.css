@@ -17,7 +17,7 @@ button {
   font-family: inherit;
   display: block;
   font-weight: 500;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   padding: 1em 2em;
   width: 100%;
   background-color: hsl(245, 75%, 52%);
@@ -25,10 +25,11 @@ button {
   border: none;
   border-radius: 10px;
   margin-bottom: 2rem;
+  transition: 0.4s;
 }
 
 .plan {
-  width: 450px;
+  width: 400px;
   margin: 100px auto;
   background-color: hsl(225, 100%, 98%);
   border-radius: 20px;
@@ -79,11 +80,15 @@ button {
 }
 .plan-change {
   font-size: 1.2rem;
-  margin-left: 12.5rem;
+  margin-left: 7.5rem;
   margin-top: 1rem;
   color: hsl(245, 75%, 52%);
 }
 
+button:hover {
+  background-color: hsl(245deg 78% 60%);
+  text-decoration: none;
+}
 .hover {
   cursor: pointer;
 }
