@@ -6,33 +6,26 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  font-family: "Red Hat Display", sans-serif;
+html {
   font-size: 62.5%;
-  background-color: hsl(225, 100%, 94%);
 }
 
-button {
-  font-family: inherit;
-  display: block;
-  font-weight: 500;
-  /* font-size: 1.8rem; */
-  padding: 1em 2em;
-  width: 100%;
-  background-color: hsl(245, 75%, 52%);
-  color: hsl(225, 100%, 98%);
-  border: none;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  transition: 0.4s;
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
 }
 
 .plan {
-  width: 400px;
-  margin: 100px auto;
+  max-width: 35rem;
   background-color: hsl(225, 100%, 98%);
   border-radius: 20px;
+  margin: 8rem 0;
 }
 
 .plan img {
@@ -41,25 +34,26 @@ button {
 }
 
 .plan-info {
-  padding: 3rem 3.5rem;
+  padding: 2.4rem 3.5rem;
+  text-align: center;
 }
 
 .plan-title {
   font-weight: 900;
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
   color: hsl(223, 47%, 23%);
 }
 .plan-description {
   font-size: 1.6rem;
-  padding: 0 20px;
   margin-bottom: 2rem;
   color: hsl(224, 23%, 55%);
 }
 .plan-overview {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: hsl(225deg 100% 94% / 36%);
-  gap: 2rem;
   border-radius: 10px;
   margin-bottom: 2rem;
   padding: 2rem;
@@ -78,11 +72,30 @@ button {
   color: hsl(224, 23%, 55%);
   font-weight: 700;
 }
-.plan-change {
+.plan-change:link,
+.plan-change:visited {
   font-size: 1.2rem;
-  margin-left: 7.5rem;
-  margin-top: 1rem;
   color: hsl(245, 75%, 52%);
+}
+
+.plan-change:hover,
+.plan-change:active {
+  cursor: pointer;
+}
+
+button {
+  font-family: inherit;
+  display: block;
+  font-weight: 500;
+  padding: 1em 2em;
+  width: 100%;
+  box-shadow: 0px 10px 10px 0px hsl(245deg 43% 79%);
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  transition: 0.4s;
 }
 
 button:hover {
@@ -93,6 +106,10 @@ button:hover {
   cursor: pointer;
 }
 
-.center-text {
+.attribution {
+  font-size: 14px;
   text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
