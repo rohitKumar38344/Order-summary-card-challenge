@@ -113,3 +113,11 @@ button:hover {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Responsive design */
+
+@media (max-width: 23em) {
+  .plan {
+    margin: 8rem 2rem;
+  }
+}
